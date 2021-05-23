@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		522EE3DA2656FC9F008522B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 522EE3D92656FC9F008522B2 /* README.md */; };
+		52883833265A7CFB00B9E521 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 52883832265A7CFB00B9E521 /* README.md */; };
 		52954473263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */; };
 		52954475263EE3A3007F0481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52954474263EE3A3007F0481 /* ContentView.swift */; };
 		52954477263EE3A5007F0481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52954476263EE3A5007F0481 /* Assets.xcassets */; };
@@ -36,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		522EE3D92656FC9F008522B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52883832265A7CFB00B9E521 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52883834265A7D1D00B9E521 /* iOSmeeting-xctemplates.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOSmeeting-xctemplates.key"; sourceTree = "<group>"; };
 		5295446F263EE3A3007F0481 /* XcodeTemplatesShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTemplatesShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTemplatesShowcaseApp.swift; sourceTree = "<group>"; };
 		52954474263EE3A3007F0481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +96,8 @@
 				52954483263EE3A5007F0481 /* XcodeTemplatesShowcaseTests */,
 				5295448E263EE3A5007F0481 /* XcodeTemplatesShowcaseUITests */,
 				52954470263EE3A3007F0481 /* Products */,
+				52883832265A7CFB00B9E521 /* README.md */,
+				52883834265A7D1D00B9E521 /* iOSmeeting-xctemplates.key */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +118,6 @@
 				529544DE2640282B007F0481 /* Modules */,
 				52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */,
 				52954474263EE3A3007F0481 /* ContentView.swift */,
-				522EE3D92656FC9F008522B2 /* README.md */,
 			);
 			path = XcodeTemplatesShowcase;
 			sourceTree = "<group>";
@@ -266,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522EE3DA2656FC9F008522B2 /* README.md in Resources */,
+				52883833265A7CFB00B9E521 /* README.md in Resources */,
 				5295447A263EE3A5007F0481 /* Preview Assets.xcassets in Resources */,
 				52954477263EE3A5007F0481 /* Assets.xcassets in Resources */,
 			);
