@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522EE3DA2656FC9F008522B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 522EE3D92656FC9F008522B2 /* README.md */; };
 		52954473263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */; };
 		52954475263EE3A3007F0481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52954474263EE3A3007F0481 /* ContentView.swift */; };
 		52954477263EE3A5007F0481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52954476263EE3A5007F0481 /* Assets.xcassets */; };
 		5295447A263EE3A5007F0481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52954479263EE3A5007F0481 /* Preview Assets.xcassets */; };
 		52954485263EE3A5007F0481 /* XcodeTemplatesShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52954484263EE3A5007F0481 /* XcodeTemplatesShowcaseTests.swift */; };
 		52954490263EE3A5007F0481 /* XcodeTemplatesShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295448F263EE3A5007F0481 /* XcodeTemplatesShowcaseUITests.swift */; };
+		529544E126402848007F0481 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529544E026402848007F0481 /* LoginView.swift */; };
+		529544EC26402886007F0481 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529544EB26402886007F0481 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522EE3D92656FC9F008522B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5295446F263EE3A3007F0481 /* XcodeTemplatesShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTemplatesShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTemplatesShowcaseApp.swift; sourceTree = "<group>"; };
 		52954474263EE3A3007F0481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		5295448B263EE3A5007F0481 /* XcodeTemplatesShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTemplatesShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295448F263EE3A5007F0481 /* XcodeTemplatesShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTemplatesShowcaseUITests.swift; sourceTree = "<group>"; };
 		52954491263EE3A5007F0481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529544E026402848007F0481 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		529544EB26402886007F0481 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52883827265A766800B9E521 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52954478263EE3A5007F0481 /* Preview Content */,
+				52954476263EE3A5007F0481 /* Assets.xcassets */,
+				5295447B263EE3A5007F0481 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		52954466263EE3A3007F0481 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +111,11 @@
 		52954471263EE3A3007F0481 /* XcodeTemplatesShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				52883827265A766800B9E521 /* Resources */,
+				529544DE2640282B007F0481 /* Modules */,
 				52954472263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift */,
 				52954474263EE3A3007F0481 /* ContentView.swift */,
-				52954476263EE3A5007F0481 /* Assets.xcassets */,
-				5295447B263EE3A5007F0481 /* Info.plist */,
-				52954478263EE3A5007F0481 /* Preview Content */,
+				522EE3D92656FC9F008522B2 /* README.md */,
 			);
 			path = XcodeTemplatesShowcase;
 			sourceTree = "<group>";
@@ -128,6 +144,23 @@
 				52954491263EE3A5007F0481 /* Info.plist */,
 			);
 			path = XcodeTemplatesShowcaseUITests;
+			sourceTree = "<group>";
+		};
+		529544DE2640282B007F0481 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				529544DF26402831007F0481 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		529544DF26402831007F0481 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				529544E026402848007F0481 /* LoginView.swift */,
+				529544EB26402886007F0481 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522EE3DA2656FC9F008522B2 /* README.md in Resources */,
 				5295447A263EE3A5007F0481 /* Preview Assets.xcassets in Resources */,
 				52954477263EE3A5007F0481 /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529544EC26402886007F0481 /* LoginViewModel.swift in Sources */,
 				52954475263EE3A3007F0481 /* ContentView.swift in Sources */,
 				52954473263EE3A3007F0481 /* XcodeTemplatesShowcaseApp.swift in Sources */,
+				529544E126402848007F0481 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +454,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"XcodeTemplatesShowcase/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XcodeTemplatesShowcase/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = XcodeTemplatesShowcase/Info.plist;
+				INFOPLIST_FILE = XcodeTemplatesShowcase/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,10 +476,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"XcodeTemplatesShowcase/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XcodeTemplatesShowcase/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = XcodeTemplatesShowcase/Info.plist;
+				INFOPLIST_FILE = XcodeTemplatesShowcase/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

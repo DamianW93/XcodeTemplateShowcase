@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+# Default the folder name to "Project Name".
+folderName="Custom"
+installDirectory=~/Library/Developer/Xcode/Templates/"$folderName"
+
+if [[ $1 == "install" ]]; then
+    # Remove old template to avoid situation when some file
+    # is renamed and old version stays in template folder
+    rm -rf "$installDirectory"
+
+    # Create the install directory.
+    mkdir -p "$installDirectory"
+
+    # Copy all of the xctemplate folders into the install directory.
+    cp -r *.xctemplate "$installDirectory"
+fi
+
+if [[ $1 == "uninstall" ]]; then
+    rm -rf "$installDirectory"
+fi
